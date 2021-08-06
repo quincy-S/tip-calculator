@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"><link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    <title>tip-calculator-app-main</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  </head>
+  <body>
+    <div>
+      <div class="header">
+        <img src="images\logo.svg" alt="logo-img">
+      </div>
+      
+     <!-- QS -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 main-container">
+            <div class="row">
+              <div class="col-lg-6 bill-card">
+                <div class="inner-card bill-inner">
+                  <h3 class="bill-text">Bill</h3>
+
+                  <div id="input-icons" class="dollar-input">
+                    <img src="images\icon-dollar.svg">
+                    <input id="money" type="text" class="input-side dollar-input-side" placeholder="0">
+                  </div>
+                
+                  <h3 class="select-tip-text">Select Tip %</h3>
+                  
+                  <div class="button-container">
+                    <button id="5%" type="button" class="custom btn btn-secondary">5%</button>
+                    <button id="10%" type="button" class="custom btn btn-secondary">10%</button>
+                    <button id="15%" type="button" class="custom btn btn-secondary">15%</button>
+            
+                    <button id ="25%" type="button" class="custom btn btn-secondary">25%</button>
+                    <button id="50%" type="button" class="custom btn btn-secondary">50%</button>
+                    <button id="custom-num" type="button" class="custom btn btn-secondary custom-button">Custom</button>
+                  </div>
+      
+                  <h3 class="num-of-people-text">Number of People</h3>
+                  <div id="input-icons" class="people-input">
+                    <img src="images\icon-person.svg">
+                    <input id="people" type="text" class="input-side people-input-side" placeholder="0">
+                  </div> 
+                </div> 
+              </div>
+              <div class="col-lg-6 tip-card card">
+                
+                <div class="inner-card tip-inner">
+                  <div class="split-div">
+                    <div class="tip-text-container">
+                      <h3 class="tip-text">Tip Amount</h3>
+                      <p class ="person-text">/ person</p>
+                    </div>
+                    
+                    <h2 id="tip-amt">$0.00</h2>
+                  </div>
+                  <div class="split-div2">
+                    <div class="tip-text-container">
+                      <h3>Total</h3>
+                      <p class="person-text">/ person</p>
+                    </div>
+                    
+                    <h2 id="total-amt">$0.00</h2>
+                  </div>
+                  
+                  <div class="d-grid gap-2">
+                    <button id="reset-button" class="btn btn-secondary reset-button" type="button">RESET</button>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>         
+      </div> 
+    
+    </div>
+    <!-- Made By Quincy Smith-Assan  -->
+  </body>
+</html>
+
+
+
+
