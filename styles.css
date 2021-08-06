@@ -218,7 +218,11 @@ p{
     .main-container{
         padding:2% 9%; 
     }
-
+    
+    .container-fluid{
+        padding:5% 30%;
+    }
+    
     .tip-card{
         margin:10px 0;
         min-height: 100px;
