@@ -214,7 +214,7 @@ p{
 }
 
 
-@media (max-width: 578px){
+@media (max-width: 320px){
     .main-container{
         padding:2% 9%; 
     }
