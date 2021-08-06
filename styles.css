@@ -214,7 +214,7 @@ p{
 }
 
 
-@media (max-width: 320px){
+@media only screen and (max-device-width: 480px){
     .main-container{
         padding:2% 9%; 
     }
