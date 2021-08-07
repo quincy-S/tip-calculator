@@ -155,12 +155,9 @@ p{
     height:35px;
     color: hsl(183, 100%, 15%);
     font-weight:700;
+    font-size:24px;
     text-align: right;
-    padding: 0px 10px;
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    box-sizing: border-box;         /* Opera/IE 8+ */
-}
+    padding:10px;
 }
 
 .input-side:focus {
@@ -182,7 +179,7 @@ p{
 
 .custom:hover{
     width:110px !important;
-    margin:7px 0;
+    margin:7px 0px;
     background-color: hsl(172, 67%, 45%) !important;
     border:none;
 }
@@ -212,14 +209,13 @@ p{
 }
 
 .reset-button:hover{
-    background-color: hsl(172, 67%, 45%) !important;
-    
+    background-color: hsl(189, 41%, 97%) !important;   
 }
 
 
 @media only screen and (max-width: 980px){
     .main-container{
-        padding:2% 7%; 
+        padding:4% 9%; 
     }
 
     .container-fluid{
@@ -233,6 +229,7 @@ p{
 
     .custom:hover{
         width:120px !important;
+        margin: 8px 3px;
     }
 
     .tip-card{
