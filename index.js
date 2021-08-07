@@ -11,8 +11,8 @@ function resetBill(){
     billInput.value = ""
     specialTip.value= ""
     peopleInput.value=""
-    tipAmount.value=""
-    totalAmount.value=""
+    tipAmount.value="$"+"0.00
+    totalAmount.value="$"+"0.00"
 }
 
 function handleTip(tip) {
