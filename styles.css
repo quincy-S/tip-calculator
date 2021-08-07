@@ -160,6 +160,7 @@ p{
     text-align: right;
     padding:0.5em;
     margin:auto;
+    font-weight:700;
 }
 
 .input-side:focus {
