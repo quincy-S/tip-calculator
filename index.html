@@ -27,25 +27,25 @@
 
                   <div id="input-icons" class="dollar-input">
                     <img src="images\icon-dollar.svg">
-                    <input id="money" type="text" class="input-side dollar-input-side" placeholder="0">
+                    <input type="text" class="input-side dollar-input-side" placeholder="0">
                   </div>
                 
                   <h3 class="select-tip-text">Select Tip %</h3>
                   
                   <div class="button-container">
-                    <button id="5%" type="button" class="custom btn btn-secondary">5%</button>
-                    <button id="10%" type="button" class="custom btn btn-secondary">10%</button>
-                    <button id="15%" type="button" class="custom btn btn-secondary">15%</button>
+                    <button type="button" value="5" class="custom btn btn-secondary">5%</button>
+                    <button type="button" value="10" class="custom btn btn-secondary">10%</button>
+                    <button type="button" value="15" class="custom btn btn-secondary">15%</button>
             
-                    <button id ="25%" type="button" class="custom btn btn-secondary">25%</button>
-                    <button id="50%" type="button" class="custom btn btn-secondary">50%</button>
-                    <button id="custom-num" type="button" class="custom btn btn-secondary custom-button">Custom</button>
+                    <button type="button" value="25" class="custom btn btn-secondary">25%</button>
+                    <button type="button" value="50"class="custom btn btn-secondary">50%</button>
+                    <input type="number" max="100" class="custom btn btn-secondary custom-button" placeholder="Custom"></button>
                   </div>
       
                   <h3 class="num-of-people-text">Number of People</h3>
                   <div id="input-icons" class="people-input">
                     <img src="images\icon-person.svg">
-                    <input id="people" type="text" class="input-side people-input-side" placeholder="0">
+                    <input type="text" class="input-side people-input-side" placeholder="0">
                   </div> 
                 </div> 
               </div>
@@ -58,7 +58,7 @@
                       <p class ="person-text">/ person</p>
                     </div>
                     
-                    <h2 id="tip-amt">$0.00</h2>
+                    <h2 class="tip-amt">$0.00</h2>
                   </div>
                   <div class="split-div2">
                     <div class="tip-text-container">
@@ -66,11 +66,11 @@
                       <p class="person-text">/ person</p>
                     </div>
                     
-                    <h2 id="total-amt">$0.00</h2>
+                    <h2 class="total-amt">$0.00</h2>
                   </div>
                   
                   <div class="d-grid gap-2">
-                    <button id="reset-button" class="btn btn-secondary reset-button" type="button">RESET</button>
+                    <button class="btn btn-secondary reset-button" type="button">RESET</button>
                   </div>
                 </div>
                
@@ -82,6 +82,7 @@
     
     </div>
     <!-- Made By Quincy Smith-Assan  -->
+    <script src="index.js"></script>
   </body>
 </html>
 
