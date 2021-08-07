@@ -3,6 +3,7 @@ body{
     font-family:"Space Mono", monospace;
     background-color: hsl(185, 41%, 84%);
     color:white;
+    font-weight:700;
 }
 
 h2{
@@ -98,7 +99,8 @@ p{
 
 #input-icons > img{
     position:absolute;
-    margin:8px 10px;  
+    top: calc(50% - 0.6em);
+    padding-left:10px;
 }
 
 #input-icons > input{
@@ -179,10 +181,11 @@ p{
 
 .custom:hover{
     width:110px !important;
-    margin:7px 0px;
+    margin:7px 0;
     background-color: hsl(172, 67%, 45%) !important;
     border:none;
 }
+
 
 .button-container{
     padding:8px 0px;
@@ -235,10 +238,13 @@ p{
         width:120px !important;
         margin: 8px 3px;
     }
-
+ 
+        
     .custom:hover{
         width:120px !important;
-        margin: 8px 3px;
+        margin:9px 3px;
+        background-color: hsl(172, 67%, 45%) !important;
+        border:none;
     }
 
     .tip-card{
