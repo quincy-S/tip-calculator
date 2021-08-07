@@ -10,7 +10,6 @@ var tipPercent;
 function resetBill(){
     billInput.value = ""
     specialTip.value= ""
-    tipButton.value=""
     peopleInput.value=""
     tipAmount.innerHTML="$" + "0.00"
     totalAmount.innerHTML="$" + "0.00"
@@ -19,20 +18,18 @@ function resetBill(){
 function handleTip(tip) {
     tipPercent = tip.target.value
     tipPercent = parseFloat((tipPercent / 100) .toFixed(2))
-    calculateBill()
+    calcBill()
 }
 
 // Calculate total bill amount plus tip
-function calculateBill() {
+function calcBill() {
     var tipPerPerson = (billInput.value*tipPercent)/peopleInput.value
     var totalPerPerson = (billInput.value/peopleInput.value)+tipPerPerson
     
     if(billInput.value>0 && peopleInput.value>0 && tipPercent){
         tipAmount.innerHTML="$"+ parseFloat(tipPerPerson.toFixed(2))
         totalAmount.innerHTML="$"+ parseFloat(totalPerPerson.toFixed(2)) 
-    } 
-    
-    
+    }     
 }
 
 for(i=0; i<tipButton.length;i++){
@@ -40,5 +37,5 @@ for(i=0; i<tipButton.length;i++){
 }
 specialTip.addEventListener("input",handleTip)
 resetButton.addEventListener("click",resetBill)
-billInput.addEventListener("input", calculateBill)
-peopleInput.addEventListener("input", calculateBill)
+billInput.addEventListener("input", calcBill)
+peopleInput.addEventListener("input", calcBill)
