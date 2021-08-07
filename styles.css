@@ -214,7 +214,7 @@ p{
 }
 
 
-@media only screen and (max-width: 880px){
+@media only screen and (min-width: 896px){
     .main-container{
         padding:2% 7%; 
     }
