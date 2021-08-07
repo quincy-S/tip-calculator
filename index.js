@@ -10,6 +10,7 @@ var tipPercent;
 function resetBill(){
     billInput.value = ""
     specialTip.value= ""
+    tipButton.value=""
     peopleInput.value=""
     tipAmount.innerHTML="$" + "0.00"
     totalAmount.innerHTML="$" + "0.00"
