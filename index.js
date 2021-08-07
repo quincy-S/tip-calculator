@@ -26,7 +26,7 @@ function calculateBill() {
     var tipPerPerson = (billInput.value*tipPercent)/peopleInput.value
     var totalPerPerson = (billInput.value/peopleInput.value)+tipPerPerson
     
-    if(billInput.value>0 && peopleInput.value>0){
+    if(billInput.value>0 && peopleInput.value>0 && tipPercent){
         tipAmount.innerHTML="$"+ parseFloat(tipPerPerson.toFixed(2))
         totalAmount.innerHTML="$"+ parseFloat(totalPerPerson.toFixed(2)) 
     } 
