@@ -6,6 +6,11 @@ body{
     font-weight:700;
 }
 
+input{
+    -webkit-appearance: none;
+}
+
+
 h2{
     position: absolute;
     display: inline-block;
