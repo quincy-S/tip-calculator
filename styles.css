@@ -6,7 +6,6 @@ body{
     font-weight:700;
 }
 
-
 h2{
     position: absolute;
     display: inline-block;
@@ -217,6 +216,14 @@ p{
     background-color: hsl(189, 41%, 97%) !important;   
 }
 
+.reset-button-disabled{
+    background-color: hsl(172, 67%, 45%) !important;
+    opacity: 40% !important;
+    color: #555 !important;
+    cursor: not-allowed !important;
+    pointer-events: none !important;
+}
+
 
 @media only screen and (max-width: 980px){
     .main-container{
@@ -261,5 +268,7 @@ p{
         position: relative;
         top:30px;
     }
+
+    
 }
 
