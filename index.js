@@ -8,14 +8,11 @@ const resetButton = document.querySelector(".reset-button")
 var tipPercent;
 
 function resetBill(){
-    billInput.value = ""
-    specialTip.value= ""
-    peopleInput.value=""
-    tipAmount.innerHTML="$" + "0.00"
-    totalAmount.innerHTML="$" + "0.00"
+    location.reload();
 }
 
 function handleTip(tip) {
+    resetButton.classList.remove("reset-button-disabled");
     tipPercent = tip.target.value
     tipPercent = parseFloat((tipPercent / 100) .toFixed(2))
     calcBill()
@@ -23,6 +20,7 @@ function handleTip(tip) {
 
 // Calculate total bill amount plus tip
 function calcBill() {
+    resetButton.classList.remove("reset-button-disabled");
     var tipPerPerson = (billInput.value*tipPercent)/peopleInput.value
     var totalPerPerson = (billInput.value/peopleInput.value)+tipPerPerson
     
@@ -32,9 +30,14 @@ function calcBill() {
     }     
 }
 
+function changeButton(){
+    resetButton.classList.add("reset-button-disabled");
+}
+
 for(i=0; i<tipButton.length;i++){
     tipButton[i].addEventListener("click",handleTip)
 }
+changeButton();
 specialTip.addEventListener("input",handleTip)
 resetButton.addEventListener("click",resetBill)
 billInput.addEventListener("input", calcBill)
